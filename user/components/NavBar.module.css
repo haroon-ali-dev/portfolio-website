@@ -3,6 +3,10 @@
     min-height: 75px;
 }
 
+.navBarCollapse {
+    justify-content: end;
+}
+
 .linkContainer a {
     color: black;
 }
@@ -12,4 +16,16 @@
     color: white;
     padding: 10px 15px 10px 15px;
     margin-left: 10px;
+}
+
+@media (min-width: 1200px) {
+    .linkContainer {
+        margin-right: 155px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .linkContainer {
+        margin-right: 225px;
+    }
 }

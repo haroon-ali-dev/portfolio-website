@@ -10,8 +10,8 @@ export default function NavBar() {
             <Container>
                 <Navbar.Brand href="#home">H.ALI</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className={`${styles.linkContainer} me-auto ms-auto`}>
+                <Navbar.Collapse className={styles.navBarCollapse} id="basic-navbar-nav">
+                    <Nav className={styles.linkContainer}>
                         <Nav.Link href="#home">HOME</Nav.Link>
                         <Nav.Link href="#about-me">ABOUT ME</Nav.Link>
                         <Nav.Link href="#skills">SKILLS</Nav.Link>
