@@ -19,7 +19,7 @@ export default function NavBar() {
                         <Nav.Link href="#portfolio">PORTFOLIO</Nav.Link>
                         <Nav.Link href="#blog">BLOG</Nav.Link>
                     </Nav>
-                    <Nav.Link className="ms-auto" href="#contact">CONTACT ME</Nav.Link>
+                    <Nav.Link className={`${styles.contactBtn} ms-auto`} href="#contact">CONTACT ME</Nav.Link>
                 </Navbar.Collapse>
                 
             </Container>
