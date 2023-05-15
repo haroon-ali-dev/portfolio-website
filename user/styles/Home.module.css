@@ -11,3 +11,13 @@
 .subHeading {
     font-size: 20px;
 }
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 80px;
+    }
+    
+    .subHeading {
+        font-size: 40px;
+    }
+}
