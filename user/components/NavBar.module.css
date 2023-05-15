@@ -1,6 +1,7 @@
 .myNavBar {
     font-weight: 600;
     min-height: 75px;
+    background-color: #FAFAFA;
 }
 
 .navBarCollapse {

@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Github } from 'react-bootstrap-icons';
 import { Linkedin } from 'react-bootstrap-icons';
+import { PcDisplayHorizontal } from 'react-bootstrap-icons';
 
 import styles from "./NavBar.module.css";
 
@@ -10,7 +11,9 @@ export default function NavBar() {
     return (
         <Navbar className={styles.myNavBar} bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">H.ALI</Navbar.Brand>
+                <Navbar.Brand href="#home">
+                    <PcDisplayHorizontal size={30} />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className={styles.navBarCollapse} id="basic-navbar-nav">
                     <Nav className={styles.linkContainer}>
