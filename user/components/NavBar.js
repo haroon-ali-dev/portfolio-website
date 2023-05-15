@@ -9,11 +9,9 @@ import styles from "./NavBar.module.css";
 
 export default function NavBar() {
     return (
-        <Navbar className={styles.myNavBar} bg="light" expand="lg">
+        <Navbar className={styles.myNavBar} expand="lg">
             <Container>
-                <Navbar.Brand href="#home">
-                    <PcDisplayHorizontal size={30} />
-                </Navbar.Brand>
+                <Navbar.Brand href="#home"><PcDisplayHorizontal size={30} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className={styles.navBarCollapse} id="basic-navbar-nav">
                     <Nav className={styles.linkContainer}>
