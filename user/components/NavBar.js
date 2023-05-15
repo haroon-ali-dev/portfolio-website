@@ -18,7 +18,10 @@ export default function NavBar() {
                         <Nav.Link href="#portfolio">PORTFOLIO</Nav.Link>
                         <Nav.Link href="#blog">BLOG</Nav.Link>
                     </Nav>
-                    <Nav.Link className={`${styles.contactBtn} ms-auto`} href="#contact">CONTACT ME</Nav.Link>
+                    <div className="d-flex">
+                        <Nav.Link className={styles.contactBtn} href="#contact">GitHub</Nav.Link>
+                        <Nav.Link className={styles.contactBtn} href="#contact">LinkedIn</Nav.Link>
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
