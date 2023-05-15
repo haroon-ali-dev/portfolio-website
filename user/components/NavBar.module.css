@@ -1,6 +1,6 @@
-.navbar {
+.myNavBar {
     font-weight: 600;
-    height: 75px;
+    min-height: 75px;
 }
 
 .linkContainer a {
