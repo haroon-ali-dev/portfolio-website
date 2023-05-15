@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Github } from 'react-bootstrap-icons';
+import { Linkedin } from 'react-bootstrap-icons';
 
 import styles from "./NavBar.module.css";
 
@@ -19,8 +21,8 @@ export default function NavBar() {
                         <Nav.Link href="#blog">BLOG</Nav.Link>
                     </Nav>
                     <div className="d-flex">
-                        <Nav.Link className={styles.contactBtn} href="#contact">GitHub</Nav.Link>
-                        <Nav.Link className={styles.contactBtn} href="#contact">LinkedIn</Nav.Link>
+                        <Nav.Link className={styles.contactBtn} href="https://github.com/haroon-ali-dev" target="_blank"><Github className="me-2" />GitHub</Nav.Link>
+                        <Nav.Link className={styles.contactBtn} href="https://www.linkedin.com/in/haroon-ali-dev" target="_blank"><Linkedin className="me-2" />LinkedIn</Nav.Link>
                     </div>
                 </Navbar.Collapse>
             </Container>

@@ -18,6 +18,11 @@
     margin-left: 10px;
 }
 
+.contactBtn:hover {
+    background-color: white;
+    color: black;
+}
+
 @media (min-width: 1200px) {
     .linkContainer {
         margin-right: 155px;
