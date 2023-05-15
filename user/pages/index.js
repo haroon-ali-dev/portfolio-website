@@ -6,9 +6,6 @@ export default function Home() {
     <>
       <Head>
         <title>Haroon Ali - Full Stack Developer</title>
-        <meta name="description" content="My portfolio website for full stack development." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <section className={styles.hero}>
