@@ -9,6 +9,18 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    padding: 30px;
+    padding: 40px 30px 30px 30px;
     border: 1px solid rgba(0,0,0,0.05);
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: 50%;
+    }
 }
