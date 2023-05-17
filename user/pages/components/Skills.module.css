@@ -14,7 +14,8 @@
 }
 
 .grid li {
-    height: 200px;
     background-color: white;
     border: 1px solid rgba(0,0,0,0.05);
+    padding: 20px;
+    text-align: center;
 }
