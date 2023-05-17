@@ -1,0 +1,20 @@
+.section {
+    padding: 100px 0px 100px 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    list-style-type: none;
+    padding: 0px;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid li {
+    height: 200px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.05);
+}
