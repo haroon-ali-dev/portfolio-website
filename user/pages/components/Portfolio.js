@@ -14,8 +14,10 @@ export default function Portfolio() {
                 {portfolioItems.map(item => (
                     <Link href={`/portfolio/${item.id}`} key={item.id}>
                         <article className={styles.article}>
-                            <Image src={item.image} width={300} height={200} alt={item.title} priority />
-                            <div>
+                            <div className={styles.imageContainer}>
+                                <Image className={styles.image} src={item.image} alt={item.title} fill priority />
+                            </div>
+                            <div className={styles.textContainer}>
                                 <p className={styles.itemHeading}>{item.title.toUpperCase()}</p>
                                 <p className={styles.itemSubHeading}>{item.type}</p>
                             </div>

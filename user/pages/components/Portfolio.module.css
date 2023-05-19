@@ -14,15 +14,25 @@
 }
 
 .article {
-    height: 300px;
+    height: 250px;
+    
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
 }
 
-.article div {
+.imageContainer {
+    height: 70%;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.textContainer {
+    height: 30%;
     color: black;
     text-align: center;
-    height: 100px;
-    padding-top: 24px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    padding-top: 12px;
 }
 
 .itemHeading {
@@ -34,3 +44,9 @@
 .itemSubHeading {
     font-size: 12px;
 }
+
+/* @media (min-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+} */
