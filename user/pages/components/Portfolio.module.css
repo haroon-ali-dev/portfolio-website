@@ -11,10 +11,22 @@
     grid-template-columns: repeat(auto-fit, 300px);
     gap: 20px;
     justify-content: center;
-    background-color: black;
 }
 
 .article {
-    background-color: green;
     height: 300px;
+}
+
+.article div {
+    color: black;
+    text-align: center;
+    height: 100px;
+    padding-top: 24px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+.itemHeading {
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0px;
 }
