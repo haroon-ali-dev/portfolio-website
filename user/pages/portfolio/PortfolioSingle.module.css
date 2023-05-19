@@ -1,0 +1,21 @@
+.section {
+    background-color: #FAFAFA;
+}
+
+.textSection {
+    background-color: white;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.imageContainer {
+    position: relative;
+    height: 600px;
+}
+
+.image {
+    object-fit: cover;
+}
