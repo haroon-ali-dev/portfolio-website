@@ -20,9 +20,9 @@ export default function PortfolioItem() {
                 <p>{item.description}</p>
             </div>
             <div className={styles.mediaSection}>
-            <div className={styles.imageContainer}>
-                <Image className={styles.image} src={item.image} alt={item.title} fill priority />
-            </div>
+                <div className={styles.imageContainer}>
+                    <Image className={styles.image} src={item.image} alt={item.title} fill priority />
+                </div>
             </div>
         </section>
     );

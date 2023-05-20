@@ -1,9 +1,21 @@
 .section {
     background-color: #FAFAFA;
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-areas:
+        "text"
+        "image"
+    ;
+    justify-content: center;
+    gap: 20px;
 }
 
 .textSection {
     background-color: white;
+    grid-area: text;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    padding: 20px;
 }
 
 .title {
@@ -11,9 +23,13 @@
     font-weight: 900;
 }
 
+.mediaSection {
+    grid-area: image;
+}
+
 .imageContainer {
     position: relative;
-    height: 600px;
+    height: 200px;
 }
 
 .image {
