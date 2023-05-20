@@ -4,8 +4,8 @@ import Link from "next/link";
 import styles from './Portfolio.module.css';
 import fileData from '@/data/portfolio-items.json';
 
-export default function Portfolio() {
-  const [portfolioItems, setportfolioItems] = useState(fileData);
+export default function Portfolio({ portfolioData }) {
+    const [portfolioItems, setportfolioItems] = useState(portfolioData.data);
 
     return (
         <section className={styles.section}>
@@ -15,11 +15,11 @@ export default function Portfolio() {
                     <Link href={`/portfolio/${item.id}`} key={item.id}>
                         <article className={styles.article}>
                             <div className={styles.imageContainer}>
-                                <Image className={styles.image} src={item.image} alt={item.title} fill priority />
+                                <Image className={styles.image} src={item.attributes.image.data.attributes.url} alt={item.attributes.title} fill priority />
                             </div>
                             <div className={styles.textContainer}>
-                                <p className={styles.itemHeading}>{item.title.toUpperCase()}</p>
-                                <p className={styles.itemSubHeading}>{item.type}</p>
+                                <p className={styles.itemHeading}>{item.attributes.title.toUpperCase()}</p>
+                                <p className={styles.itemSubHeading}>{item.attributes.type}</p>
                             </div>
                         </article>
                     </Link>

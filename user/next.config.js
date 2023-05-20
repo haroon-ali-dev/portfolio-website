@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: "default",
-    domains: ["dummyimage.com"],
+    domains: ["res.cloudinary.com"],
   }
 }
 

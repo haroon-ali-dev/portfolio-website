@@ -5,7 +5,7 @@ import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 
-export default function Home() {
+export default function Home({ portfolioData }) {
   return (
     <>
       <Head>
@@ -15,8 +15,17 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Skills />
-        <Portfolio />
+        <Portfolio portfolioData={portfolioData} />
       </main>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const results = await fetch("http://127.0.0.1:1337/api/portfolio-items?populate=*");
+  const portfolioData = await results.json();
+
+  return {
+      props: { portfolioData },
+  };
 }
