@@ -28,7 +28,6 @@ export default function PortfolioItem() {
                     {item.links.map(link => (
                         <>
                         <Link className={styles.link} href={link.link} target='_blank'>{link.title}</Link>
-                        <Link className={styles.link} href={link.link} target='_blank'>{link.title}</Link>
                         </>
                     ))}
                 </div>
