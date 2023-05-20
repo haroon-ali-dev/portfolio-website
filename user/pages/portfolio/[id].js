@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 import styles from './PortfolioSingle.module.css';
 import fileData from '@/data/portfolio-items.json';
 // console.log(fileData);
@@ -17,7 +18,22 @@ export default function PortfolioItem() {
             <div className={styles.textSection}>
                 <p className={styles.title}>{item.title}</p>
                 <p>{item.type}</p>
-                <p>{item.description}</p>
+                <p className={styles.description}>{item.description}</p>
+                <hr className={styles.divider} />
+                <ul className={styles.list}>
+                    {item.tools.map((tool, i) => (
+                        <li key={i}>{tool}</li>
+                    ))}
+                </ul>
+                <hr className={styles.divider} />
+                <div className={styles.linksContainer}>
+                    {item.links.map(link => (
+                        <>
+                        <Link className={styles.link} href={link.link} target='_blank'>{link.title}</Link>
+                        <Link className={styles.link} href={link.link} target='_blank'>{link.title}</Link>
+                        </>
+                    ))}
+                </div>
             </div>
             <div className={styles.mediaSection}>
                 <div className={styles.imageContainer}>

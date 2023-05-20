@@ -17,8 +17,8 @@
             "amet"
         ],
         "links": [
-            "mspaven0@cafepress.com",
-            "ttuminelli0@nationalgeographic.com"
+            { "title": "GitHub", "link": "mspaven0@cafepress.com" },
+            { "title": "Application", "link": "ttuminelli0@nationalgeographic.com" }
         ],
         "image": "http://dummyimage.com/1920x1080.png/dddddd/000000",
         "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -41,8 +41,8 @@
             "integer a"
         ],
         "links": [
-            "kyoskowitz1@huffingtonpost.com",
-            "gjedrzejczyk1@simplemachines.org"
+            { "title": "GitHub", "link": "mspaven0@cafepress.com" },
+            { "title": "Application", "link": "ttuminelli0@nationalgeographic.com" }
         ],
         "image": "http://dummyimage.com/1920x1080.png/5fa2dd/ffffff",
         "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -65,8 +65,8 @@
             "eros"
         ],
         "links": [
-            "tyoule2@imageshack.us",
-            "rredier2@hubpages.com"
+            { "title": "GitHub", "link": "mspaven0@cafepress.com" },
+            { "title": "Application", "link": "ttuminelli0@nationalgeographic.com" }
         ],
         "image": "http://dummyimage.com/1920x1080.png/ff4444/ffffff",
         "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -89,8 +89,8 @@
             "mi"
         ],
         "links": [
-            "lgealy3@tinyurl.com",
-            "nrudinger3@g.co"
+            { "title": "GitHub", "link": "mspaven0@cafepress.com" },
+            { "title": "Application", "link": "ttuminelli0@nationalgeographic.com" }
         ],
         "image": "http://dummyimage.com/1920x1080.png/5fa2dd/ffffff",
         "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -113,8 +113,8 @@
             "justo"
         ],
         "links": [
-            "eskoyles4@aol.com",
-            "ggough4@a8.net"
+            { "title": "GitHub", "link": "mspaven0@cafepress.com" },
+            { "title": "Application", "link": "ttuminelli0@nationalgeographic.com" }
         ],
         "image": "http://dummyimage.com/1920x1080.png/5fa2dd/ffffff",
         "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"

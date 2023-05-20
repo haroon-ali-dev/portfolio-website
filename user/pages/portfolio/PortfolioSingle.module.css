@@ -15,12 +15,44 @@
     background-color: white;
     grid-area: text;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
-    padding: 20px;
+    padding: 40px;
 }
 
 .title {
     font-size: 2.5rem;
     font-weight: 900;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.linksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.link {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.link:hover {
+    background-color: white;
+    color: black;
+}
+
+.divider:nth-child(6) {
+    margin-bottom: 20px;
 }
 
 .mediaSection {
