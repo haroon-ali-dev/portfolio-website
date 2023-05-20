@@ -62,6 +62,7 @@
 .imageContainer {
     position: relative;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 .image {

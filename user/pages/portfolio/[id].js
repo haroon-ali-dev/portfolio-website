@@ -39,6 +39,10 @@ export default function PortfolioItem() {
                 <div className={styles.imageContainer}>
                     <Image className={styles.image} src={item.image} alt={item.title} fill priority />
                 </div>
+                <video width="100%" height="240" controls>
+                    <source src={item.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
     );
