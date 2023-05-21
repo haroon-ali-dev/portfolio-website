@@ -23,6 +23,12 @@
     font-weight: 900;
 }
 
+.subHeading {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0px;
+}
+
 .description {
     margin-bottom: 20px;
 }
@@ -30,7 +36,9 @@
 .list {
     list-style-type: none;
     padding: 0px;
-    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .linksContainer {

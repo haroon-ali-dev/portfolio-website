@@ -14,9 +14,17 @@ export default function portfolioitem({ fetchedItem }) {
                 <p>{item.type}</p>
                 <p className={styles.description}>{item.attributes.description}</p>
                 <hr className={styles.divider} />
+                <p className={styles.subHeading}>Tools</p>
                 <ul className={styles.list}>
                     {item.attributes.tools.map((tool, i) => (
                         <li key={i}>{tool}</li>
+                    ))}
+                </ul>
+                <hr className={styles.divider} />
+                <p className={styles.subHeading}>Deployment</p>
+                <ul className={styles.list}>
+                    {item.attributes.deployedTo.map((platform, i) => (
+                        <li key={i}>{platform}</li>
                     ))}
                 </ul>
                 <hr className={styles.divider} />
