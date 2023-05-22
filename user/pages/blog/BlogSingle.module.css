@@ -49,3 +49,31 @@
 .body {
     margin-top: 10px;
 }
+
+@media (min-width: 768px) {
+    .imageContainer {
+        height: 400px;
+    }
+
+    .imageGrid {
+        grid-template-columns: repeat(auto-fit, 280px);
+    }
+
+    .imageGridContainer {
+        height: 250px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .imageContainer {
+        height: 450px;
+    }
+
+    .imageGrid {
+        grid-template-columns: repeat(auto-fit, 350px);
+    }
+
+    .imageGridContainer {
+        height: 300px;
+    }
+}
