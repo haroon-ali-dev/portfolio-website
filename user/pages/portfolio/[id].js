@@ -36,7 +36,16 @@ export default function portfolioitem({ fetchedItem }) {
             </div>
             <div className={styles.mediaSection}>
                 <div className={styles.imageContainer}>
-                    <Image className={styles.image} src={item.attributes.image.data.attributes.url} alt={item.attributes.title} fill priority />
+                    <Image
+                        className={styles.image}
+                        src={item.attributes.image.data.attributes.url}
+                        alt={item.attributes.title}
+                        fill
+                        priority
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
+                    />
                 </div>
                 <div className={styles.videoContainer}>
                     <video width="100%" height="100%" controls autoPlay>

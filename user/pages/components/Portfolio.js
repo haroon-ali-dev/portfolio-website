@@ -11,8 +11,8 @@ export default function Portfolio({ portfolioData }) {
         <section className={styles.section}>
             <h3 className='text-center mb-5'>PORTFOLIO</h3>
             <div className={styles.grid}>
-                {portfolioItems.map(item => (
-                    <Link href={`/portfolio/${item.id}`} key={item.id}>
+                {portfolioItems.map((item, i) => (
+                    <Link key={item.id} href={`/portfolio/${item.id}`}>
                         <article className={styles.article}>
                             <div className={styles.imageContainer}>
                                 <Image
@@ -20,7 +20,7 @@ export default function Portfolio({ portfolioData }) {
                                     src={item.attributes.image.data.attributes.url}
                                     alt={item.attributes.title}
                                     fill
-                                    priority
+                                    priority={i < 3 ? true : false}
                                     sizes="(max-width: 768px) 100vw,
                                     (max-width: 1200px) 50vw,
                                     33vw"
