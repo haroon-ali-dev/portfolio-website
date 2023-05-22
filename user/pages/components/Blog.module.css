@@ -13,12 +13,13 @@
 }
 
 .article {
-    height: 350px;
+    height: 425px;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    background-color: #FAFAFA;
 }
 
 .imageContainer {
-    height: 70%;
+    height: 50%;
     position: relative;
 }
 
@@ -27,13 +28,35 @@
 }
 
 .textContainer {
-    height: 30%;
+    height: 50%;
     color: black;
-    padding: 10px;
+    padding: 20px;
 }
 
 .itemHeading {
     font-weight: 900;
     font-size: 20px;
     margin: 0px;
+}
+
+.date {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.body {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.link {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.link:hover {
+    background-color: white;
+    color: black;
 }
