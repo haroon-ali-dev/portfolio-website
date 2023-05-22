@@ -32,7 +32,7 @@ export default function Blog({ blogPostData }) {
                             <CalendarFill size={10} />
                             <span className={styles.date}><Moment format='DD-MM-YYYY'>{item.attributes.date}</Moment></span>
                             <p className={styles.body}>{item.attributes.body.substr(0, 100)}...</p>
-                            <Link className={styles.link} href={`/post/${item.id}`}>READ MORE</Link>
+                            <Link className={styles.link} href={`/blog/${item.id}`}>READ MORE</Link>
                         </div>
                     </article>
                 ))}
