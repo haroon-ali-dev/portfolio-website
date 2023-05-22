@@ -15,7 +15,16 @@ export default function Portfolio({ portfolioData }) {
                     <Link href={`/portfolio/${item.id}`} key={item.id}>
                         <article className={styles.article}>
                             <div className={styles.imageContainer}>
-                                <Image className={styles.image} src={item.attributes.image.data.attributes.url} alt={item.attributes.title} fill priority />
+                                <Image
+                                    className={styles.image}
+                                    src={item.attributes.image.data.attributes.url}
+                                    alt={item.attributes.title}
+                                    fill
+                                    priority
+                                    sizes="(max-width: 768px) 100vw,
+                                    (max-width: 1200px) 50vw,
+                                    33vw"
+                                />
                             </div>
                             <div className={styles.textContainer}>
                                 <p className={styles.itemHeading}>{item.attributes.title.toUpperCase()}</p>
