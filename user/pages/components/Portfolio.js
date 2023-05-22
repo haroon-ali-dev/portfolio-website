@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+
 import styles from './Portfolio.module.css';
-import fileData from '@/data/portfolio-items.json';
 
 export default function Portfolio({ portfolioData }) {
     const [portfolioItems, setportfolioItems] = useState(portfolioData.data);

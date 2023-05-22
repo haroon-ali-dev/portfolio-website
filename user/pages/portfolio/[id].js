@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+
 import styles from './PortfolioSingle.module.css';
-import fileData from '@/data/portfolio-items.json';
 
 export default function portfolioitem({ fetchedItem }) {
     const [item, setItem] = useState(fetchedItem.data);
@@ -71,7 +71,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
     const results = await fetch("http://127.0.0.1:1337/api/portfolio-items?populate=*");
     const fetchedItems = await results.json();
-    
+
     return {
         paths:
             fetchedItems?.data.map((item) => ({
