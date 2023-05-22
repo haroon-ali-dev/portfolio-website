@@ -1,0 +1,51 @@
+.section {
+    padding: 50px 0px 50px 0px;
+}
+
+.card {
+    background-color: #FAFAFA;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.imageContainer {
+    height: 200px;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.imageGridContainer {
+    position: relative;
+    height: 200px;
+}
+
+.textContainer {
+    padding: 20px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.date {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.body {
+    margin-top: 10px;
+}
