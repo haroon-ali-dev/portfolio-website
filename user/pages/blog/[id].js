@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useState } from 'react';
 import Image from "next/image";
 import Moment from 'react-moment';
@@ -9,43 +10,48 @@ export default function Post({ fetchedData }) {
     const [post, setItem] = useState(fetchedData.data);
 
     return (
-        <section className={styles.section}>
-            <div className={styles.card}>
-                <div className={styles.imageContainer}>
-                    <Image
-                        className={styles.image}
-                        src={post.attributes.mainImage.data.attributes.url}
-                        alt={post.attributes.title}
-                        fill
-                        priority
-                        sizes="(max-width: 768px) 100vw,
+        <>
+            <Head>
+                <title>{post.attributes.title} - Blog</title>
+            </Head>
+            <section className={styles.section}>
+                <div className={styles.card}>
+                    <div className={styles.imageContainer}>
+                        <Image
+                            className={styles.image}
+                            src={post.attributes.mainImage.data.attributes.url}
+                            alt={post.attributes.title}
+                            fill
+                            priority
+                            sizes="(max-width: 768px) 100vw,
                             50vw"
-                    />
-                </div>
-                <div className={styles.textContainer}>
-                    <p className={styles.title}>{post.attributes.title.toUpperCase()}</p>
-                    <CalendarFill size={10} />
-                    <span className={styles.date}><Moment format='DD-MM-YYYY'>{post.attributes.date}</Moment></span>
-                    <p className={styles.body}>{post.attributes.body}</p>
-                </div>
-                <div className={styles.imageGrid}>
-                    {post.attributes.images.data.map((image, i) => (
-                        <article key={i} className={styles.imageGridContainer}>
-                            <Image
-                                className={styles.image}
-                                src={image.attributes.url}
-                                alt={image.attributes.alternativeText}
-                                fill
-                                priority
-                                sizes="(max-width: 768px) 100vw,
+                        />
+                    </div>
+                    <div className={styles.textContainer}>
+                        <p className={styles.title}>{post.attributes.title.toUpperCase()}</p>
+                        <CalendarFill size={10} />
+                        <span className={styles.date}><Moment format='DD-MM-YYYY'>{post.attributes.date}</Moment></span>
+                        <p className={styles.body}>{post.attributes.body}</p>
+                    </div>
+                    <div className={styles.imageGrid}>
+                        {post.attributes.images.data.map((image, i) => (
+                            <article key={i} className={styles.imageGridContainer}>
+                                <Image
+                                    className={styles.image}
+                                    src={image.attributes.url}
+                                    alt={image.attributes.alternativeText}
+                                    fill
+                                    priority
+                                    sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw,
                                 33vw"
-                            />
-                        </article>
-                    ))}
+                                />
+                            </article>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
 
