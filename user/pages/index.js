@@ -6,7 +6,7 @@ import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Blog from './components/Blog'
 
-export default function Home({ portfolioData }) {
+export default function Home({ portfolioData, blogPostData }) {
   return (
     <>
       <Head>
@@ -17,17 +17,20 @@ export default function Home({ portfolioData }) {
         <AboutMe />
         <Skills />
         <Portfolio portfolioData={portfolioData} />
-        <Blog />
+        <Blog blogPostData={blogPostData} />
       </main>
     </>
   )
 }
 
 export async function getStaticProps() {
-  const results = await fetch("http://127.0.0.1:1337/api/portfolio-items?populate=*");
+  let results = await fetch("http://127.0.0.1:1337/api/portfolio-items?populate=*");
   const portfolioData = await results.json();
 
+  results = await fetch("http://127.0.0.1:1337/api/blog-posts?populate=*");
+  const blogPostData = await results.json();
+
   return {
-      props: { portfolioData },
+      props: { portfolioData, blogPostData },
   };
 }
