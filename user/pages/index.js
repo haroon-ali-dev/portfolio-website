@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
+import Blog from './components/Blog'
 
 export default function Home({ portfolioData }) {
   return (
@@ -16,6 +17,7 @@ export default function Home({ portfolioData }) {
         <AboutMe />
         <Skills />
         <Portfolio portfolioData={portfolioData} />
+        <Blog />
       </main>
     </>
   )
