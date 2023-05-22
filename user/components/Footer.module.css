@@ -4,3 +4,20 @@
     text-align: center;
     padding-top: 100px;
 }
+
+.iconList {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconList svg {
+    color: #AFAFAFAF;
+}
+
+.iconList svg:hover {
+    color: white;
+}
