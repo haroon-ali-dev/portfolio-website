@@ -2,7 +2,7 @@
     background-color: black;
     color: white;
     text-align: center;
-    padding-top: 100px;
+    padding: 100px 0px 50px 0px;
 }
 
 .iconList {
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .iconList svg {
@@ -20,4 +21,18 @@
 
 .iconList svg:hover {
     color: white;
+}
+
+.email {
+    font-weight: 900;
+    font-size: 25px;
+    color: white;
+}
+
+.email:hover {
+    color: #AFAFAFAF;
+}
+
+.divider {
+    margin-top: 100px;
 }
