@@ -11,7 +11,7 @@ export default function portfolioitem({ fetchedItem }) {
     return (
         <>
             <Head>
-                <title>{item.attributes.title} - Portfolio</title>
+                <title>{item.attributes.title + " - Portfolio"}</title>
             </Head>
             <section className={styles.section}>
                 <div className={styles.textSection}>

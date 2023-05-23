@@ -12,7 +12,7 @@ export default function Post({ fetchedData }) {
     return (
         <>
             <Head>
-                <title>{post.attributes.title} - Blog</title>
+                <title>{post.attributes.title + " - Blog"}</title>
             </Head>
             <section className={styles.section}>
                 <div className={styles.card}>
