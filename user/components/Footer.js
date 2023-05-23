@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Github } from 'react-bootstrap-icons';
 import { Linkedin } from 'react-bootstrap-icons';
+import moment from 'moment';
 
 import styles from "./Footer.module.css";
 
@@ -14,6 +15,7 @@ export default function Footer() {
                 <li><Link href="https://www.linkedin.com/in/haroon-ali-dev" target="_blank"><Linkedin size={25} /></Link></li>
             </ul>
             <hr className={styles.divider} />
+            <p className={styles.copyright}>&copy; {moment().year()} <span>Haroon Ali</span></p>
         </footer>
     );
 }

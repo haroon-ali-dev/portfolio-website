@@ -36,3 +36,12 @@
 .divider {
     margin-top: 100px;
 }
+
+.copyright {
+    margin: 50px 0px 0px 0px;
+}
+
+.copyright span {
+    color: #AFAFAFAF;
+    font-weight: 600;
+}
