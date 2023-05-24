@@ -66,7 +66,7 @@ export default function portfolioitem({ fetchedItem }) {
 
 export async function getStaticProps({ params }) {
     const itemId = params.id;
-    const results = await fetch(`http://127.0.0.1:1337/api/portfolio-items/${itemId}?populate=*`);
+    const results = await fetch(`${process.env.strapiHost}/api/portfolio-items/${itemId}?populate=*`);
     const fetchedItem = await results.json();
 
     return {
@@ -75,7 +75,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const results = await fetch("http://127.0.0.1:1337/api/portfolio-items?populate=*");
+    const results = await fetch(`${process.env.strapiHost}/api/portfolio-items?populate=*`);
     const fetchedItems = await results.json();
 
     return {

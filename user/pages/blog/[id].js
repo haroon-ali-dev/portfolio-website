@@ -57,7 +57,7 @@ export default function Post({ fetchedData }) {
 
 export async function getStaticProps({ params }) {
     const id = params.id;
-    const results = await fetch(`http://127.0.0.1:1337/api/blog-posts/${id}?populate=*`);
+    const results = await fetch(`${process.env.strapiHost}/api/blog-posts/${id}?populate=*`);
     const fetchedData = await results.json();
 
     return {
@@ -66,7 +66,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const results = await fetch("http://127.0.0.1:1337/api/blog-posts?populate=*");
+    const results = await fetch(`${process.env.strapiHost}/api/blog-posts?populate=*`);
     const fetchedData = await results.json();
 
     return {
