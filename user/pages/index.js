@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Blog from './components/Blog'
+
+import styles from '@/styles/Home.module.css'
 
 export default function Home({ portfolioData, blogPostData }) {
   return (
@@ -25,10 +26,10 @@ export default function Home({ portfolioData, blogPostData }) {
 }
 
 export async function getStaticProps() {
-  let results = await fetch("http://127.0.0.1:1337/api/portfolio-items?populate=*");
+  let results = await fetch(`${process.env.strapiHost}/api/portfolio-items?populate=*`);
   const portfolioData = await results.json();
 
-  results = await fetch("http://127.0.0.1:1337/api/blog-posts?populate=*");
+  results = await fetch(`${process.env.strapiHost}/api/blog-posts?populate=*`);
   const blogPostData = await results.json();
 
   return {
