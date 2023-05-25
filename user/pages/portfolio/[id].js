@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import ReactMarkdown from 'react-markdown';
 
 import styles from './PortfolioSingle.module.css';
 
@@ -17,7 +18,7 @@ export default function portfolioitem({ fetchedItem }) {
                 <div className={styles.textSection}>
                     <p className={styles.title}>{item?.data.attributes.title}</p>
                     <p>{item?.data.type}</p>
-                    <p className={styles.description}>{item?.data.attributes.description}</p>
+                    <div className={styles.description}><ReactMarkdown>{item?.data.attributes.description}</ReactMarkdown></div>
                     <hr className={styles.divider} />
                     <p className={styles.subHeading}>Tools</p>
                     <ul className={styles.list}>
@@ -48,8 +49,8 @@ export default function portfolioitem({ fetchedItem }) {
                             fill
                             priority
                             sizes="(max-width: 768px) 100vw,
-                        (max-width: 1200px) 50vw,
-                        33vw"
+                            (max-width: 1200px) 50vw,
+                            33vw"
                         />
                     </div>
                     <div className={styles.videoContainer}>
