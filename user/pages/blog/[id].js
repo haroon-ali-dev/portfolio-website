@@ -7,20 +7,20 @@ import { CalendarFill } from 'react-bootstrap-icons';
 import styles from './BlogSingle.module.css';
 
 export default function Post({ fetchedData }) {
-    const [post, setItem] = useState(fetchedData.data);
+    const [post, setItem] = useState(fetchedData);
 
     return (
         <>
             <Head>
-                <title>{post.attributes.title + " - Blog"}</title>
+                <title>{post?.data.attributes.title + " - Blog"}</title>
             </Head>
             <section className={styles.section}>
                 <div className={styles.card}>
                     <div className={styles.imageContainer}>
                         <Image
                             className={styles.image}
-                            src={post.attributes.mainImage.data.attributes.url}
-                            alt={post.attributes.title}
+                            src={post?.data.attributes.mainImage.data.attributes.url}
+                            alt={post?.data.attributes.title}
                             fill
                             priority
                             sizes="(max-width: 768px) 100vw,
@@ -28,13 +28,13 @@ export default function Post({ fetchedData }) {
                         />
                     </div>
                     <div className={styles.textContainer}>
-                        <p className={styles.title}>{post.attributes.title.toUpperCase()}</p>
+                        <p className={styles.title}>{post?.data.attributes.title.toUpperCase()}</p>
                         <CalendarFill size={10} />
-                        <span className={styles.date}><Moment format='DD-MM-YYYY'>{post.attributes.date}</Moment></span>
-                        <p className={styles.body}>{post.attributes.body}</p>
+                        <span className={styles.date}><Moment format='DD-MM-YYYY'>{post?.data.attributes.date}</Moment></span>
+                        <p className={styles.body}>{post?.data.attributes.body}</p>
                     </div>
                     <div className={styles.imageGrid}>
-                        {post.attributes.images.data.map((image, i) => (
+                        {post?.data.attributes.images.data.map((image, i) => (
                             <article key={i} className={styles.imageGridContainer}>
                                 <Image
                                     className={styles.image}
@@ -74,6 +74,6 @@ export async function getStaticPaths() {
             fetchedData?.data.map((item) => ({
                 params: { id: item.id.toString() },
             })) || [],
-        fallback: true,
+        fallback: false
     };
 }

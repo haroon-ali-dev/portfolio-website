@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from './Portfolio.module.css';
 
 export default function Portfolio({ portfolioData }) {
-    const [portfolioItems, setportfolioItems] = useState(portfolioData.data);
+    const [portfolioItems, setportfolioItems] = useState(portfolioData);
 
     return (
         <>
@@ -13,7 +13,7 @@ export default function Portfolio({ portfolioData }) {
             <section className={styles.section}>
                 <h3 className='text-center mb-5'>PORTFOLIO</h3>
                 <div className={styles.grid}>
-                    {portfolioItems.map((item, i) => (
+                    {portfolioItems?.data.map((item, i) => (
                         <Link key={item.id} href={`/portfolio/${item.id}`}>
                             <article className={styles.article}>
                                 <div className={styles.imageContainer}>
@@ -24,8 +24,8 @@ export default function Portfolio({ portfolioData }) {
                                         fill
                                         priority={i < 3 ? true : false}
                                         sizes="(max-width: 768px) 100vw,
-                                    (max-width: 1200px) 50vw,
-                                    33vw"
+                                        (max-width: 1200px) 50vw,
+                                        33vw"
                                     />
                                 </div>
                                 <div className={styles.textContainer}>

@@ -7,7 +7,7 @@ import { CalendarFill } from 'react-bootstrap-icons';
 import styles from './Blog.module.css';
 
 export default function Blog({ blogPostData }) {
-    const [posts, setposts] = useState(blogPostData.data);
+    const [posts, setposts] = useState(blogPostData);
 
     return (
         <>
@@ -15,7 +15,7 @@ export default function Blog({ blogPostData }) {
             <section className={styles.section}>
                 <h3 className='text-center mb-5'>BLOG</h3>
                 <div className={styles.grid}>
-                    {posts.map((item, i) => (
+                    {posts?.data.map((item, i) => (
                         <article key={item.id} className={styles.article}>
                             <div className={styles.imageContainer}>
                                 <Image
