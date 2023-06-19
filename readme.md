@@ -19,5 +19,5 @@ HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinary
 - Next.js image optimization with next/image where quality of images is automatically reduced, lazy loading is used and different sizes of the images are loaded to increase performance.
 
 ## Deployment
-- Next.js End-user website deployed to Netlify.
+- Next.js end-user website deployed to Netlify.
 - Strapi Admin panel and PostgreSQl database deployed to Railway.
