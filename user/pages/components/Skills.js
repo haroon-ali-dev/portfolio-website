@@ -90,6 +90,26 @@ export default function Skills() {
                             <h5>Automated Testing</h5>
                         </li>
                     </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: -100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ ease: "easeOut", duration: 0.5, delay: 2 }}
+                    >
+                        <li>
+                            <Code className='mb-1' size={30} />
+                            <h5>AWS</h5>
+                        </li>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: -100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ ease: "easeOut", duration: 0.5, delay: 2.25 }}
+                    >
+                        <li>
+                            <Code className='mb-1' size={30} />
+                            <h5>GCP</h5>
+                        </li>
+                    </motion.div>
                 </ul>
             </section>
         </>
