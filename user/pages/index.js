@@ -20,7 +20,6 @@ export default function Home({ portfolioData, blogPostData }) {
         <Skills />
         <Portfolio portfolioData={portfolioData} />
         <Blog blogPostData={blogPostData} />
-        <div>Hello World</div>
       </main>
     </>
   )
