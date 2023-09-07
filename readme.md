@@ -23,4 +23,4 @@ HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinary
 - Strapi Admin panel and PostgreSQl database deployed to Railway.
 
 ## Deployment Links
-- Deployed Front End: https://haroon-ali-portfolio.netlify.app/
+- Deployed Front End: https://haroon-ali-portfolio.vercel.app/
