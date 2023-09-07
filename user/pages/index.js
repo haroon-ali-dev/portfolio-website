@@ -12,6 +12,7 @@ export default function Home({ portfolioData, blogPostData }) {
     <>
       <Head>
         <title>Haroon Ali - Full Stack Developer</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
       </Head>
       <main>
         <Hero />
