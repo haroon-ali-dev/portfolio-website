@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from "next/image";
 import Moment from 'react-moment';
 import { CalendarFill } from 'react-bootstrap-icons';
+import ReactMarkdown from 'react-markdown';
 
 import styles from './BlogSingle.module.css';
 
@@ -31,10 +32,10 @@ export default function Post({ fetchedData }) {
                         <p className={styles.title}>{post?.data.attributes.title.toUpperCase()}</p>
                         <CalendarFill size={10} />
                         <span className={styles.date}><Moment format='DD-MM-YYYY'>{post?.data.attributes.date}</Moment></span>
-                        <p className={styles.body}>{post?.data.attributes.body}</p>
+                        <p className={styles.body}><ReactMarkdown>{post?.data.attributes.body}</ReactMarkdown></p>
                     </div>
                     <div className={styles.imageGrid}>
-                        {post?.data.attributes.images.data.map((image, i) => (
+                        {post?.data.attributes?.images?.data?.map((image, i) => (
                             <article key={i} className={styles.imageGridContainer}>
                                 <Image
                                     className={styles.image}
