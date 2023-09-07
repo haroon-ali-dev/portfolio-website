@@ -75,6 +75,7 @@ export default function Skills() {
                                 src="https://res.cloudinary.com/dembzfkgg/image/upload/v1694103644/icons/react-native_joiz2b.svg"
                                 width="80"
                                 height="80"
+                                alt="React Native logo"
                             />
                         </li>
                     </motion.div>
