@@ -1,50 +1,26 @@
-.hero {
-    text-align: center;
-    font-weight: 900;
-    padding: 100px 0px 100px 0px;
-}
-
-.heading {
-    font-size: 40px;
-    letter-spacing: 5px;
-    margin-bottom: -5px;
-}
-
-.subHeading {
-    font-size: 20px;
-    letter-spacing: 4px;
-}
-
-@media (min-width: 576px) {
-    .heading {
-        font-size: 60px;
-        letter-spacing: 13px;
-    }
+.video {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
     
-    .subHeading {
-        font-size: 20px;
-        letter-spacing: 13px;
-    }
 }
 
 @media (min-width: 768px) {
-    .hero {
-        padding: 150px 0px 150px 0px;
+    .video {
+        height: 335px;
+        object-position: 50% 30%;
     }
+}
 
-    .heading {
-        font-size: 80px;
-        letter-spacing: 13px;
-    }
-    
-    .subHeading {
-        font-size: 40px;
-        letter-spacing: 10px;
+@media (min-width: 992px) {
+    .video {
+        height: 480px;
     }
 }
 
 @media (min-width: 1400px) {
-    .linkContainer {
-        margin-right: 182px;
+    .video {
+        height: 575px;
+        object-position: 50% 25%;
     }
 }
