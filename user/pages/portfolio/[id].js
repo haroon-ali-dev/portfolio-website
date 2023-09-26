@@ -53,11 +53,14 @@ export default function portfolioitem({ fetchedItem }) {
                             33vw"
                         />
                     </div>
+
                     <div className={styles.videoContainer}>
-                        <video width="100%" height="100%" controls autoPlay>
-                            <source src={item?.data.attributes.video.data.attributes.url} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                        {item?.data.attributes.video?.data?.attributes?.url && (
+                            <video width="100%" height="100%" controls autoPlay>
+                                <source src={item?.data.attributes.video?.data?.attributes?.url} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        )}
                     </div>
                 </div>
             </section>
