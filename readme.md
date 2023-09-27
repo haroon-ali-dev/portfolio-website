@@ -4,14 +4,17 @@ A website to showcase my projects and blog posts.
 ## Preview
 ![preview](https://github.com/haroon-ali-dev/portfolio-website/assets/87202358/f71720fc-c7d7-4e80-93f2-71c2375321d5)
 
-## Tech Stack
-HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinaryd
-
-## Features
+## :page_facing_up: Features
 - Strapi admin with Cloudinary and PostgreSQL integration for managing portfolio and blog data.
 - Front End built with Next.js
 - Portfolio page with data fetched from Strapi.
 - Blog page with data fetched from Strapi.
+
+## Tech Stack
+HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinaryd
+
+## Features
+
 
 ## Utilization
 - Next.js data fetching SSG for portfolio and blog data where all data is fetched at built time to increase performance.
