@@ -21,11 +21,12 @@ A website to showcase my projects and blog posts.
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,postgres)](https://skillicons.dev)
 
 ## :wrench: Additional Tech
-Strapi, Cloudinary, Railway.
+Strapi, Cloudinary, Vercel, Railway.
 
-## Deployment
-- Next.js end-user website deployed to Netlify.
-- Strapi Admin panel and PostgreSQl database deployed to Railway.
+## :earth_americas: Deployment
+- Next.js front end deployed to Vercel.
+- Strapi instance deployed to Railway.
+- PostgreSQL database deployed to Railway.
 
-## Deployment Links
-- Deployed Front End: https://haroon-ali-portfolio.vercel.app/
+### :earth_americas: Links
+- [Deployed Application](https://haroon-ali-portfolio.vercel.app/)
