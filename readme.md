@@ -1,8 +1,8 @@
 # 🧔 Portfolio Website
 A website to showcase my projects and blog posts.
 
-## Screenshots
-![App Screenshot](https://res.cloudinary.com/dembzfkgg/image/upload/v1684965311/large_portfolio_website_screenshot_fe78ddf1d7.png)
+## Preview
+![preview](https://github.com/haroon-ali-dev/portfolio-website/assets/87202358/f71720fc-c7d7-4e80-93f2-71c2375321d5)
 
 ## Tech Stack
 HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinary
