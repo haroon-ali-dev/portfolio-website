@@ -1,4 +1,4 @@
-# Portfolio Website
+# 🧔 Portfolio Website
 A website to showcase my projects and blog posts.
 
 ## Screenshots
