@@ -5,7 +5,7 @@ A website to showcase my projects and blog posts.
 ![preview](https://github.com/haroon-ali-dev/portfolio-website/assets/87202358/f71720fc-c7d7-4e80-93f2-71c2375321d5)
 
 ## Tech Stack
-HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinary
+HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinaryd
 
 ## Features
 - Strapi admin with Cloudinary and PostgreSQL integration for managing portfolio and blog data.
