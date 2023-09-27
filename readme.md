@@ -10,6 +10,13 @@ A website to showcase my projects and blog posts.
 - Portfolio page with data fetched from Strapi.
 - Blog page with data fetched from Strapi.
 
+## :bookmark_tabs: Utilization
+- Fully responsive.
+- Project preview GIFs and videos.
+- Next.js data fetching SSG for portfolio and blog data where all data is fetched at built time to increase performance.
+- Next.js font optimization with next/font where all Google Fonts are hosted on Next.js server to increase performance.
+- Next.js image optimization with next/image where quality of images is automatically reduced, lazy loading is used and different sizes of the images are loaded to increase performance.
+
 ## Tech Stack
 HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinaryd
 
@@ -17,9 +24,7 @@ HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinaryd
 
 
 ## Utilization
-- Next.js data fetching SSG for portfolio and blog data where all data is fetched at built time to increase performance.
-- Next.js font optimization with next/font where all Google Fonts are hosted on Next.js server to increase performance.
-- Next.js image optimization with next/image where quality of images is automatically reduced, lazy loading is used and different sizes of the images are loaded to increase performance.
+
 
 ## Deployment
 - Next.js end-user website deployed to Netlify.
