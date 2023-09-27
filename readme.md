@@ -17,14 +17,11 @@ A website to showcase my projects and blog posts.
 - Next.js font optimization with next/font where all Google Fonts are hosted on Next.js server to increase performance.
 - Next.js image optimization with next/image where quality of images is automatically reduced, lazy loading is used and different sizes of the images are loaded to increase performance.
 
-## Tech Stack
-HTML, CSS, Bootstrap, JavaScript, React.js, Next.js, Strapi, Cloudinaryd
+## :hammer: Tech Stack
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,postgres)](https://skillicons.dev)
 
-## Features
-
-
-## Utilization
-
+## :wrench: Additional Tech
+Strapi, Cloudinary, Railway.
 
 ## Deployment
 - Next.js end-user website deployed to Netlify.
